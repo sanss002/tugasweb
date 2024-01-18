@@ -1,0 +1,114 @@
+<form name="form1">
+<script>
+function proses()
+{
+	var tujuan=document.form1.tujuan.value;
+	var kurir=document.form1.kurir.value;
+	var jenis=document.form1.jenis.value;
+	var berat=document.form1.berat.value;
+	
+	if((tujuan=="BANDUNG")&&(kurir=="JNE")&&(jenis=="ekonomi")) var harga=5000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="JNE")&&(jenis=="reguler")) var harga=6000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="JNE")&&(jenis=="kilat")) var harga=7000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="TIKI")&&(jenis=="ekonomi")) var harga=6000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="TIKI")&&(jenis=="reguler")) var harga=7000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="TIKI")&&(jenis=="kilat")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="ANTERAJA")&&(jenis=="ekonomi")) var harga=7000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="ANTERAJA")&&(jenis=="reguler")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="BANDUNG")&&(kurir=="ANTERAJA")&&(jenis=="kilat")) var harga=9000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="JNE")&&(jenis=="ekonomi")) var harga=6000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="JNE")&&(jenis=="reguler")) var harga=7000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="JNE")&&(jenis=="kilat")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="TIKI")&&(jenis=="ekonomi")) var harga=7000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="TIKI")&&(jenis=="reguler")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="TIKI")&&(jenis=="kilat")) var harga=9000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="ANTERAJA")&&(jenis=="ekonomi")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="ANTERAJA")&&(jenis=="reguler")) var harga=9000;
+	document.form1.harga.value=harga;
+	if((tujuan=="JAKARTA")&&(kurir=="ANTERAJA")&&(jenis=="kilat")) var harga=10000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="JNE")&&(jenis=="ekonomi")) var harga=7000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="JNE")&&(jenis=="reguler")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="JNE")&&(jenis=="kilat")) var harga=9000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="TIKI")&&(jenis=="ekonomi")) var harga=8000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="TIKI")&&(jenis=="reguler")) var harga=9000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="TIKI")&&(jenis=="kilat")) var harga=10000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="ANTERAJA")&&(jenis=="ekonomi")) var harga=9000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="ANTERAJA")&&(jenis=="reguler")) var harga=10000;
+	document.form1.harga.value=harga;
+	if((tujuan=="SURABAYA")&&(kurir=="ANTERAJA")&&(jenis=="kilat")) var harga=11000;
+	document.form1.harga.value=harga;
+	var harga=document.form1.harga.value;
+	var total=harga*berat
+	document.form1.total.value=total
+}
+function reset()
+{
+	alert ("RESET")
+}
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+
+<div class="w3-container w3-red">
+	<div class="w3-panel w3-blue w3-card-4">
+		<center>
+		<p><h2>PENGIRIMAN PAKET</p>
+	</div>
+	
+	<div class="w3-panel w3-cyan w3-card-4 w3-animate-zoom">
+	<center>
+	<table>
+		<tr><td>KOTA TUJUAN<td><select class="w3-input" "w3-select" name="tujuan">
+			<option>BANDUNG
+			<option>JAKARTA
+			<option>SURABAYA
+		</select>
+		<tr><td>KURIR<td><select class="w3-input" "w3-select" name="kurir">
+			<option>JNE
+			<option>TIKI
+			<option>ANTERAJA
+		</select>
+		<tr><td>JENIS<td><input class="w3-radio" type="radio" name="jenis" value="ekonomi">EKONOMI
+			<br>
+			<input class="w3-radio" type="radio" name="jenis" value="reguler">REGULER
+			<br>
+			<input class="w3-radio" type="radio" name="jenis" value="kilat">KILAT
+		<tr><td>BERAT<td><input class="w3-input" "w3-text" name="berat"><td>Kg
+		<tr><td colspan=2><hr>
+		<tr><td>HARGA<td><input class="w3-input" "w3-text" name="harga">
+		<tr><td>TOTAL<td><input class="w3-input" "w3-text" name="total">
+	</table>
+	</div>
+	<div class="w3-panel w3-blue w3-animate-opacity ">
+	<p>
+	<center>
+	<input type="button" class="w3-btn w3-black" value="Proses" onclick="proses()">
+	<input type="button" class="w3-btn w3-black" value="Reset" onclick="reset()">
+	</P>
+	</div>
+</div>
